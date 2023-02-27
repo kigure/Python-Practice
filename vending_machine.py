@@ -8,6 +8,7 @@ import random
 lucky = random.randint(1, 3)
 
 JUICE = 150
+TEA = 100
 money = input("いくら入れますか?:")
 money = int(money)
 
@@ -26,3 +27,6 @@ elif money == JUICE:
 else:
     print("ジュースは出ません")
     print(str(JUICE - money) + "円足りません")
+
+total = JUICE + TEA
+print("ジュースとお茶の合計は{}円お茶は{}円です".format(total, TEA))
