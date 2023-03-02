@@ -2,7 +2,6 @@
 y = {"a": "x", "y": "c"}
 print(y["a"])
 
-#        ↓キー　　　↓値　
 car = {"brand": "Toyota", "model": "Yarisu", "price": "10000$", "year": "2016"}
 print(car["brand"])
 print(car.get("mode", "Does not exist"))
@@ -60,3 +59,10 @@ print(car)
 #     number += 1   # ここまでが繰り返される条件と処理
 # print(number)
 # print("終了")      # 条件の結果がFalseになった場合に出力される処理
+
+
+Me = {"name": "kigure", "from": "Tokyo",
+      "gender": "male", "favorite_food": "meat"}
+print(Me.get("name"))
+Me.update({"hobby": "videos_game"})
+print(Me.get("age", "Does not exist"))

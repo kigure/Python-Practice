@@ -11,7 +11,6 @@ def vending_machine():
     lucky = random.randint(1, 3)
 
     JUICE = 150
-    TEA = 100
     money = input("いくら入れますか?:")
     money = int(money)
 
@@ -29,5 +28,8 @@ def vending_machine():
 
 vending_machine()
 
-# total = JUICE + TEA
-# print("ジュースとお茶の合計は{}円お茶は{}円です".format(total, TEA))
+# 追加したい機能
+# 辞書型かリスト型を使って、いろんな種類のドリンクを購入できるようにする
+# ドリンクひとつひとつに値(値段)を設定する
+# 消費税を追加する 標準税率は10%だけどドリンクは生活必需品になるから軽減税率が適用されるため、税率は8%だ。
+# 消費税 = 商品価格 * 0.08  税込価格 = 商品価格 + 消費税
