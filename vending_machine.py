@@ -3,26 +3,31 @@
 # trueの場合はジュースが出て、falseはジュースは出ずに足りない金額を告知
 # ジュースの値段より多く金額が投入された場合は、ジュースが出てかつ money - JUICE の値が出力
 
-import random
 
-lucky = random.randint(1, 3)
+def vending_machine():
 
-JUICE = 150
-TEA = 100
-money = input("いくら入れますか?:")
-money = int(money)
+    import random
 
-if money > JUICE and lucky == 1:
-    print("ジュースゲット！当たりです!" + str(money - JUICE) + "円のお釣りです")
-elif money > JUICE:
-    print("ジュースゲット" + str(money - JUICE) + "円のお釣りです")
-elif money == JUICE and lucky == 1:
-    print("ジュースゲットお釣りなし" + "当たりです")
-elif money == JUICE:
-    print("ジュースゲットお釣りなし")
-else:
-    print("ジュースは出ません" + str(JUICE - money) + "円足りません")
+    lucky = random.randint(1, 3)
 
+    JUICE = 150
+    TEA = 100
+    money = input("いくら入れますか?:")
+    money = int(money)
+
+    if money > JUICE and lucky == 1:
+        print("ジュースゲット！当たりです！" + str(money - JUICE) + "円のお釣りです")
+    elif money > JUICE:
+        print("ジュースゲット" + str(money - JUICE) + "円のお釣りです")
+    elif money == JUICE and lucky == 1:
+        print("ジュースゲットお釣りなし" + "当たりです")
+    elif money == JUICE:
+        print("ジュースゲットお釣りなし")
+    else:
+        print("ジュースは出ません" + str(JUICE - money) + "円足りません")
+
+
+vending_machine()
 
 # total = JUICE + TEA
 # print("ジュースとお茶の合計は{}円お茶は{}円です".format(total, TEA))

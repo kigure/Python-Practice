@@ -62,3 +62,36 @@ print(list_fruits)
 list_fruits = ["apple", "orange", "grape", "strawberry", "pineapple"]
 list_fruits.reverse()
 print(list_fruits)
+
+
+def win():
+    list_base = ["高木", "木暮", "塩津", "武藤", "中本"]
+    print("高木" in list_base)  # True
+
+    list_base.append("城之内")
+    print(list_base)
+
+    list_base.clear()
+    list_base.append("高木")
+    print(list_base)
+    return win
+
+
+def add(a, b, c):
+    x = a * b + c
+    return x
+
+
+x = add(7, 4, 5)
+print(x)
+
+
+def My_friends():
+    list_friends = ["macaron", "kaede", "sora", "minayo"]
+    print(list_friends)
+    new_friend = input("Enter your friends:")
+    list_friends.append(new_friend)
+    print(list_friends)
+
+
+My_friends()

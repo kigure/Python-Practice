@@ -19,3 +19,19 @@ print(type(weight))
 print(type(tall))
 
 print(tall + weight)
+
+anime = "悟空"
+rival = "ベジータ"
+
+print("ドラゴンボールの主人公は{}ライバルは{}です".format(anime, rival), type(anime))
+
+nashimin = 74
+Pi = 3.14
+
+print(type(nashimin), type(Pi))
+
+Pi = str(Pi)
+
+print(type(Pi))
+
+print(Pi + nashimin)
