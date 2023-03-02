@@ -13,20 +13,16 @@ money = input("いくら入れますか?:")
 money = int(money)
 
 if money > JUICE and lucky == 1:
-    print("ジュースゲット")
-    print("当たりです")
-    print(str(money - JUICE) + "円のお釣りです")
+    print("ジュースゲット！当たりです!" + str(money - JUICE) + "円のお釣りです")
 elif money > JUICE:
-    print("ジュースゲット")
-    print(str(money - JUICE) + "円のお釣りです")
+    print("ジュースゲット" + str(money - JUICE) + "円のお釣りです")
 elif money == JUICE and lucky == 1:
-    print("ジュースゲットお釣りなし")
-    print("当たりです")
+    print("ジュースゲットお釣りなし" + "当たりです")
 elif money == JUICE:
     print("ジュースゲットお釣りなし")
 else:
-    print("ジュースは出ません")
-    print(str(JUICE - money) + "円足りません")
+    print("ジュースは出ません" + str(JUICE - money) + "円足りません")
 
-total = JUICE + TEA
-print("ジュースとお茶の合計は{}円お茶は{}円です".format(total, TEA))
+
+# total = JUICE + TEA
+# print("ジュースとお茶の合計は{}円お茶は{}円です".format(total, TEA))

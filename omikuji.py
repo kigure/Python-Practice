@@ -1,8 +1,13 @@
 import random
 
-lucky = random.randint(1, 5)
+lucky = random.randint(1, 10)
 
-if lucky == 1:
-    print("You are lucky")
-else:
-    print("You are not lucky")
+# if lucky == 1:
+#     print("You are lucky")
+# else:
+#     print("You are not lucky")
+
+while lucky != 1:
+    print(lucky)
+    lucky = random.randint(1, 10)
+print("おめでとう")
